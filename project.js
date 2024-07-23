@@ -33,7 +33,7 @@ let apiCall = async (city) => {
     
      let place = formattedData.name
 
-    locationElement.innerHTML = "City:" + place
+    locationElement.innerHTML = place
 
     let iconcode = formattedData.weather[0].icon
 
