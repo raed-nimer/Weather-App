@@ -1,4 +1,4 @@
-body{
+body {
     background: rgb(255, 255, 255);
 }
 
@@ -10,4 +10,15 @@ body{
     padding: 1rem;
     border-radius: .5rem;
     text-align: center;
+}
+
+.search {
+    margin-top: 8px;
+}
+
+.search-input {
+    padding: 7px 10px;
+    border: 1px solid  rgb(150, 149, 149);
+    font-size: 18px;
+    margin-left: 8px;
 }
