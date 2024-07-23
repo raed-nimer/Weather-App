@@ -38,4 +38,43 @@ let apiCall = async (city) => {
     let iconcode = formattedData.weather[0].icon
 
     let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+
+    imageElement.src=iconurl
     
+    let weatherdescription = formattedData.weather[0].description
+
+    weatherdescriptionElement.innerHTML = weatherdescription
+
+    
+    let mainInformation = formattedData.main
+    console.log(mainInformation);
+
+    let feelsLikeInC = mainInformation.feels_like - 273.15
+    feelsLikeElement.innerHTML = "Feels Like:" + feelsLikeInC.toFixed(0) + "°C"
+    console.log(feelsLikeInC);
+
+    let humidity = mainInformation.humidity
+    humidityElement.innerHTML = "Humidity:" + humidity.toFixed(0) + "%"
+    console.log(humidity);
+
+     // Displaying pressure
+     let pressure = mainInformation.pressure
+     pressure.innerHTML = "Pressure:" + pressure.toFixed(0) + "°C"
+    
+    // Displaying sea level
+    let sea_level = mainInformation.sea_level - 273.15
+    sealevelElement.innerHTML = "Sea Level:" + sea_level.toFixed(0) + "FT"
+
+     // Displaying temperature in celcius
+     let tempInC = mainInformation.temp - 273.15
+     tempElement.innerHTML = tempInC.toFixed(0) + "°C"
+    
+     // Displaying max temperature
+    let maxTempInC = mainInformation.temp_max - 273.15
+    maxtempElement.innerHTML = "Max Temperature:" + maxTempInC.toFixed(0) + "°C"
+    console.log(maxTempInC);
+    
+
+
+
+
