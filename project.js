@@ -73,6 +73,40 @@ let apiCall = async (city) => {
     let maxTempInC = mainInformation.temp_max - 273.15
     maxtempElement.innerHTML = "Max Temperature:" + maxTempInC.toFixed(0) + "°C"
     console.log(maxTempInC);
+
+
+    let minTempInC = mainInformation.temp_min - 273.15
+    mintempElement.innerHTML = "Min Temperature:" + minTempInC.toFixed(0) + "°C"
+    console.log(minTempInC);
+
+
+    // log whats below.
+    let timezone = formattedData.timezone
+    console.log(timezone);
+    let wind = formattedData.wind
+    console.log(wind);
+    let weatherInfo = formattedData.weather
+    console.log(weatherInfo);
+    
+}
+
+} catch(error){
+    console.log("We are inside catch block");
+    console.log(error.message);
+    // if anything goes wrong in the 'try' block,
+    // it will jump to catch()
+}
+
+}
+
+apiCall("Stockholm")
+
+//Change to handleClick()
+const handleButtonClick = () => {
+    let value = inputElement.value //this will give the value
+    console.log(value)
+    apiCall(value)
+}
     
 
 
