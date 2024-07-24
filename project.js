@@ -80,7 +80,6 @@ let apiCall = async (city) => {
     console.log(minTempInC);
 
 
-    // log whats below.
     let timezone = formattedData.timezone
     console.log(timezone);
     let wind = formattedData.wind
@@ -105,10 +104,15 @@ apiCall("Stockholm")
 const handleButtonClick = () => {
     let value = inputElement.value //this will give the value
     console.log(value)
+    if (value !== ""){
     apiCall(value)
 }
     
+}
+    
 
+
+searchElement.addEventListener("click", handleButtonClick)
 
 
 

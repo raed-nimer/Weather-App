@@ -3,25 +3,33 @@
 <head>
     <link rel="stylesheet" href = "styles.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 </head>
 <body>
     <div class="card">
         <div class="search"><input type="text" class="search-input" placeholder="enter city name" id="city-input">
-        <button class="search-btn" id="search-btn">search</button></div>    
+        <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button></div>    
         <img class="weather-img" src="" id="image" alt="">
         <p class="weather-description" id="weather-description"></p>
         <h2 class="temperature" id="temp"></h2>
 
         <h1 id="location" class="location"></h1>
-        <p id="feels-like"></p>
-        <div class="humidity-container">
-        <p class="humidity" id="humidity"></p></div>
-        <p class="max-temp" id="max-temp"></p>
-        <p class="min-temp" id="min-temp"></p>
-        <p class="pressure" id="pressure"></p>
-        <p class="sea-level" id="sea-level"></p> 
+        
+        <p class="text-white" id="feels-like"></p>
+
+        <div class="humidity-container"><i class="fa-solid fa-water text-white"></i>
+        <p class="text-white" id="humidity"></p></div>
+
+        <div class="max-temp-container"><i class="fa-solid fa-temperature-high text-white"></i>
+            <p class="text-white" id="max-temp"></p></div>
+            
+        <div class="min-temp-container"><i class="fa-solid fa-temperature-low text-white"></i>
+            <p class="text-white" id="min-temp"></p></div>    
+
+        <p class="text-white" id="pressure"></p>
+        <p class="text-white" id="sea-level"></p> 
         
     </div>    
     <script src="project.js"></script>
