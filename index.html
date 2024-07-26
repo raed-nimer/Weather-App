@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="card">
-        <div class="search"><input type="text" class="search-input" placeholder="enter city name" id="city-input">
+        <div class="search"><input type="text" class="search-input" placeholder="Enter city" id="city-input">
         <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button></div>    
         <img class="weather-img" src="" id="image" alt="">
         <p class="weather-description" id="weather-description"></p>
@@ -17,19 +17,22 @@
 
         <h1 id="location" class="location"></h1>
         
-        <p class="text-white" id="feels-like"></p>
-
-        <div class="humidity-container"><i class="fa-solid fa-water text-white"></i>
-        <p class="text-white" id="humidity"></p></div>
-
-        <div class="max-temp-container"><i class="fa-solid fa-temperature-high text-white"></i>
-            <p class="text-white" id="max-temp"></p></div>
+        <p class="text-gray" id="feels-like"></p>
+        
+        <div class="temp-container">
+        <div class="max-temp-container"><i class="fa-solid fa-temperature-high text-black"></i>
+            <p class="text-gray" id="max-temp"></p></div>
             
-        <div class="min-temp-container"><i class="fa-solid fa-temperature-low text-white"></i>
-            <p class="text-white" id="min-temp"></p></div>    
+        <div class="min-temp-container"><i class="fa-solid fa-temperature-low text-black"></i>
+            <p class="text-gray" id="min-temp"></p></div>    
+        </div>
 
-        <p class="text-white" id="pressure"></p>
-        <p class="text-white" id="sea-level"></p> 
+       <div class="pressure-container">
+        <p class="text-gray" id="pressure"></p>
+        <p class="text-gray" id="sea-level"></p> 
+      </div>
+        <div class="humidity-container"><i class="fa-solid fa-water text-black"></i>
+            <p class="text-gray" id="humidity"></p></div>
         
     </div>    
     <script src="project.js"></script>

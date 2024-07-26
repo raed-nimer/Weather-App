@@ -59,7 +59,7 @@ let apiCall = async (city) => {
 
      // Displaying pressure
      let pressure = mainInformation.pressure
-     pressure.innerHTML = "Pressure:" + pressure.toFixed(0) + "°C"
+     pressureElement.innerHTML = "Pressure:" + pressure.toFixed(0) + "mb"
     
     // Displaying sea level
     let sea_level = mainInformation.sea_level - 273.15
@@ -71,12 +71,12 @@ let apiCall = async (city) => {
     
      // Displaying max temperature
     let maxTempInC = mainInformation.temp_max - 273.15
-    maxtempElement.innerHTML = "Max Temperature:" + maxTempInC.toFixed(0) + "°C"
+    maxtempElement.innerHTML = "Max Temp:" + maxTempInC.toFixed(0) + "°C"
     console.log(maxTempInC);
 
 
     let minTempInC = mainInformation.temp_min - 273.15
-    mintempElement.innerHTML = "Min Temperature:" + minTempInC.toFixed(0) + "°C"
+    mintempElement.innerHTML = "Min Temp:" + minTempInC.toFixed(0) + "°C"
     console.log(minTempInC);
 
 

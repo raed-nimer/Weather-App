@@ -1,5 +1,5 @@
 body {
-    background: rgb(255, 255, 255);
+    background: white;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -19,9 +19,10 @@ body {
 
 .search-input {
     padding: 7px 10px;
-    border: 1px solid  rgb(150, 149, 149);
+    border: none;
     font-size: 18px;
     margin-left: 8px;
+    border-radius: 6px;
 }
 
 .search-btn {
@@ -34,7 +35,7 @@ body {
 }
 
 .temperature {
-    color: white;
+    color: #676666;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
     margin: 5px 0;
@@ -43,7 +44,7 @@ body {
 .location {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: white;
+    color: #673d3d;
     margin: 4px 0;
 }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .weather-description {
-    color: white;
+    color:  #4b4949;
     margin-top: 0;
 }
 
@@ -65,21 +66,24 @@ gap: 10px;
 
 }
 
-.text-white {
-    color: white;
+.text-gray {
+    color:#4b4949;
 }
 
-.max-temp-container {
+.text-black {
+    color: black;
+}
+
+.max-temp-container, .min-temp-container {
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.min-temp-container {
-    display:flex;
+
+.pressure-container, .temp-container {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 1.5rem;
 }
-   
