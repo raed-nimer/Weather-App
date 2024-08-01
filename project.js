@@ -10,7 +10,11 @@ let inputElement = document.getElementById("city-input")
 let searchElement = document.getElementById("search-btn")
 let imageElement = document.getElementById("image")
 let weatherdescriptionElement = document.getElementById("weather-description")
-
+var map = L.map('map').setView([0, 0], 1);
+let marker = null
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=p14qZB5wwA8Y5xetwUyR', {
+    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+  }).addTo(map);
 
 let apiCall = async (city) => {
     
@@ -30,7 +34,9 @@ let apiCall = async (city) => {
         } else { //city found
    
     
-    
+    let longitude = formattedData.coord.lon
+    let latitude = formattedData.coord.lat
+
      let place = formattedData.name
 
     locationElement.innerHTML = place
@@ -87,6 +93,17 @@ let apiCall = async (city) => {
     let weatherInfo = formattedData.weather
     console.log(weatherInfo);
     
+    // Removing old marker
+    if (marker != null) {
+        map.removeLayer(marker)
+    }
+    // Jumping to current location
+    map.setView([latitude, longitude], 4)
+   marker = L.marker([latitude, longitude]).addTo(map)
+   map.panTo(latitude, longitude, {
+    animate: true, 
+    duration: 1
+   })
 }
 
 } catch(error){
@@ -115,4 +132,13 @@ const handleButtonClick = () => {
 searchElement.addEventListener("click", handleButtonClick)
 
 
+
+
+// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
+
+// L.marker([51.5, -0.09]).addTo(map)
+//     .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+//     .openPopup();
 
