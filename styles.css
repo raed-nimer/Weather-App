@@ -3,6 +3,12 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 .card {
     max-width: 600px;
     margin: 0 auto;
