@@ -10,12 +10,12 @@ let inputElement = document.getElementById("city-input")
 let searchElement = document.getElementById("search-btn")
 let imageElement = document.getElementById("image")
 let weatherdescriptionElement = document.getElementById("weather-description")
+let forecastElement = document.getElementById("forecast-container")
 var map = L.map('map').setView([0, 0], 1);
 let marker = null
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=p14qZB5wwA8Y5xetwUyR', {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
   }).addTo(map);
-
 let apiCall = async (city) => {
     
     //API Call
@@ -36,6 +36,34 @@ let apiCall = async (city) => {
     
     let longitude = formattedData.coord.lon
     let latitude = formattedData.coord.lat
+    let forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + API_KEY
+
+    let response2 = await fetch(forecastUrl)
+    let formattedData2 = await response2.json()
+
+    if (formattedData2.cod === "404") {
+        alert("Location not found")
+        return
+    }
+
+    let listofForcastweathers = formattedData2.list 
+    console.log(listofForcastweathers);
+    
+    let output = ""
+
+    for (let i = 0; i < 7; i++) {
+        console.log(listofForcastweathers[i]);
+        let weather = listofForcastweathers[i].main.temp - 273.15
+        let time = listofForcastweathers[i].dt_txt
+
+        let iconcode = listofForcastweathers[i].weather[0].icon
+        let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+
+        output += "<div class='forecast-card'>  <p>" + time + "</p> <img src='"+ iconurl +"'/> <p>" + weather.toFixed(0) + "°C </p></div> "
+
+    }
+
+    forecastElement.innerHTML = output
 
      let place = formattedData.name
 
@@ -98,12 +126,13 @@ let apiCall = async (city) => {
         map.removeLayer(marker)
     }
     // Jumping to current location
-    map.setView([latitude, longitude], 4)
-   marker = L.marker([latitude, longitude]).addTo(map)
-   map.panTo(latitude, longitude, {
-    animate: true, 
-    duration: 1
-   })
+ //   map.setView([latitude, longitude], 10)
+ map.flyTo([latitude, longitude], 5);
+ marker = L.marker([latitude, longitude]).addTo(map);
+ // map.panTo(latitude, longitude, {
+ //   animate: true,
+ //   duration: 5,
+ // });
 }
 
 } catch(error){

@@ -10,7 +10,7 @@ body {
     font-style: normal;
   }
 .card {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
     margin-top: 3rem;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
