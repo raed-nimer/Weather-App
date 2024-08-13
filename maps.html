@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+        integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <nav class="nav-links">
+        <li class="link"><a href="index.html">Home</a></li>
+        <li class="link"><a href="maps.html">Map</a></li>
+    </nav>
+    <div class="card">
+        <div class="search"><input type="text" class="search-input" placeholder="Enter country" id="country-input">
+            <button class="search-btn" id="search-country-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="wrapper">
+            <div class="main-info-container">
+                
+            </div>
+
+            <div class="extra-info-container">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="map" id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+        integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+        crossorigin=""></script>
+
+
+    <script src="maps.js"></script>
+</body>
+
+</html>
