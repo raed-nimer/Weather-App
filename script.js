@@ -59,7 +59,7 @@ let apiCall = async (city) => {
         let iconcode = listofForcastweathers[i].weather[0].icon
         let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
 
-        output += "<div class='forecast-card'>  <p>" + time + "</p> <img src='"+ iconurl +"'/> <p>" + weather.toFixed(0) + "°C </p></div> "
+        output += "<div class='forecast-card'>  <p class='text-white'>" + time + "</p> <img src='"+ iconurl +"'/> <p class='text-white'>" + weather.toFixed(0) + "°C </p></div> "
 
     }
 
@@ -84,20 +84,20 @@ let apiCall = async (city) => {
     console.log(mainInformation);
 
     let feelsLikeInC = mainInformation.feels_like - 273.15
-    feelsLikeElement.innerHTML = "Feels Like:" + feelsLikeInC.toFixed(0) + "°C"
+    feelsLikeElement.innerHTML = feelsLikeInC.toFixed(0) + "°C"
     console.log(feelsLikeInC);
 
     let humidity = mainInformation.humidity
-    humidityElement.innerHTML = "Humidity:" + humidity.toFixed(0) + "%"
+    humidityElement.innerHTML = humidity.toFixed(0) + "%"
     console.log(humidity);
 
      // Displaying pressure
      let pressure = mainInformation.pressure
-     pressureElement.innerHTML = "Pressure:" + pressure.toFixed(0) + "mb"
+     pressureElement.innerHTML = pressure.toFixed(0) + "mb"
     
     // Displaying sea level
     let sea_level = mainInformation.sea_level - 273.15
-    sealevelElement.innerHTML = "Sea Level:" + sea_level.toFixed(0) + "FT"
+    sealevelElement.innerHTML = sea_level.toFixed(0) + "FT"
 
      // Displaying temperature in celcius
      let tempInC = mainInformation.temp - 273.15
@@ -105,12 +105,12 @@ let apiCall = async (city) => {
     
      // Displaying max temperature
     let maxTempInC = mainInformation.temp_max - 273.15
-    maxtempElement.innerHTML = "Max Temp:" + maxTempInC.toFixed(0) + "°C"
+    maxtempElement.innerHTML = maxTempInC.toFixed(0) + "°C"
     console.log(maxTempInC);
 
 
     let minTempInC = mainInformation.temp_min - 273.15
-    mintempElement.innerHTML = "Min Temp:" + minTempInC.toFixed(0) + "°C"
+    mintempElement.innerHTML = minTempInC.toFixed(0) + "°C"
     console.log(minTempInC);
 
 
