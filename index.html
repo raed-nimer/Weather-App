@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
-   integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+        integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+        crossorigin="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Weather App</title>
 </head>
+
 <body>
 
     <nav class="nav-links">
-        <li class="link"><a href="#home">Home</a></li>
-        <li class="link"><a href="#map">Map</a></li>
+        <li class="link"><a href="index.html">Home</a></li>
+        <li class="link"><a href="maps.html">Map</a></li>
     </nav>
 
     <div class="card">
@@ -27,19 +31,19 @@
         </div>
         <div class="wrapper">
             <div class="main-info-container">
-        <img class="weather-img" src="" id="image" alt="">
-        <p class="weather-description" id="weather-description"></p>
+                <img class="weather-img" src="" id="image" alt="">
+                <p class="weather-description" id="weather-description"></p>
                 <h2 class="temperature text-white" id="temp"></h2>
 
                 <h1 id="location" class="location text-white"></h1>
-        
+
             </div>
 
 
             <div class="extra-info-container">
 
-        
-        <div class="temp-container">
+
+                <div class="temp-container">
                     <div class="feels-like-container">
                         <p class="text-white text-lg mb-1" id="feels-like"></p>
                         <p class="text-white mt-1">Feels Like</p>
@@ -49,15 +53,15 @@
                         <p class="text-white text-lg mb-1" id="max-temp"></p>
                         <p class="text-white mt-1">High</p>
                     </div>
-            
+
                     <div class="min-temp-container">
                         <!-- <i class="fa-solid fa-temperature-low text-black"></i> -->
                         <p class="text-white text-lg mb-1" id="min-temp"></p>
                         <p class="text-white mt-1">Low</p>
                     </div>
-        </div>
+                </div>
 
-       <div class="pressure-container">
+                <div class="pressure-container">
                     <div>
                         <p class="text-white text-lg mb-1" id="pressure"></p>
                         <p class="text-white mt-1">Pressure</p>
@@ -74,19 +78,23 @@
                 <div class="humidity-container">
                     <!-- <i class="fa-solid fa-water text-black"></i> -->
 
-      </div>
-        <div class="humidity-container"><i class="fa-solid fa-water text-black"></i>
-            <p class="text-gray" id="humidity"></p></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Forecast container starts here-->
         <div id="forecast-container" class="forecast-container"></div>
-    </div>    
+    </div>
 
     <div class="map" id="map"></div>
 
+
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
-   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
-   crossorigin=""></script>
+        integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+        crossorigin=""></script>
 
-
-    <script src="project.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

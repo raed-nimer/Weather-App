@@ -1,0 +1,4 @@
+move maps to separate file. 
+style navbar.
+add rest countries api.
+dispaly country's info.

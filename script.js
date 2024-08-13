@@ -16,7 +16,7 @@ let marker = null
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=p14qZB5wwA8Y5xetwUyR', {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
   }).addTo(map);
-let apiCall = async (city) => {
+let fetchWeatherInfo = async (city) => {
     
     //API Call
     //URL
@@ -144,14 +144,14 @@ let apiCall = async (city) => {
 
 }
 
-apiCall("Stockholm")
+fetchWeatherInfo("Stockholm")
 
 //Change to handleClick()
 const handleButtonClick = () => {
     let value = inputElement.value //this will give the value
     console.log(value)
     if (value !== ""){
-    apiCall(value)
+    fetchWeatherInfo(value)
 }
     
 }
