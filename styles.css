@@ -182,3 +182,16 @@ gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.country-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-header {
+    font-weight: 400;
+}
+
+.forecast-container-wrapper{
+
+}
