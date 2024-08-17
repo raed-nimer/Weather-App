@@ -114,17 +114,36 @@ gap: 10px;
     margin-bottom: 0.25rem;
 }
 
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
 .mt-1 {
     margin-top: 0.25rem;
 }
-
-.max-temp-container, .min-temp-container {
-    /* display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; */
+.mt-2 {
+    margin-top: 0.5rem;
 }
 
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.text-left {
+    text-align: left;
+}
 
 .pressure-container, .temp-container {
     display: flex;
