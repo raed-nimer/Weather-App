@@ -65,9 +65,9 @@ body {
 }
 
 .location {
-    font-weight: 700;
-    text-align: center;
+    font-weight: 500;
     margin: 4px 0;
+    text-transform: uppercase;
 }
 
 .weather-img {
