@@ -17,6 +17,7 @@
         rel="stylesheet">
     <title>Weather App</title>
 </head>
+
 <body>
     <nav class="nav-links">
         <li class="link"><a href="index.html">Home</a></li>
@@ -29,24 +30,27 @@
             </select>
             <!-- <button class="search-btn" id="search-country-btn"><i class="fa-solid fa-magnifying-glass"></i></button> -->
         </div>
+
         <div class="wrapper">
             <!-- First column -->
             <div class="main-info-container" id="main-info-container">
                 <h2 class="location text-white mt-8 mb-8" id="country-name"></h2>
                 <div id="country-flag-container"></div>
             </div>
+            <!-- secound column -->
             <div class="extra-info-container" id="extra-info-container">
                 <div class="country-details">
                     <div class="capital-container">
                         <p class="text-lg text-white">Capital:</p>
                         <p class="text-white" id="capital"></p>
+                    </div>
                     <!-- <p class="text-white" id="currency"></p> -->
 
                     <div class="language-container">
                         <p class="text-lg text-white">Language:</p>
                         <p class="text-white" id="language"></p>
                     </div>
-                    </div>
+                </div>
                 <div class="country-details">
                     <div class="population-container">
                         <p class="text-lg text-white">Population:</p>
@@ -79,7 +83,7 @@
         crossorigin=""></script>
 
 
-    <script src="maps.js"></script>
+    <script src="js/maps.js"></script>
 </body>
 
 </html>

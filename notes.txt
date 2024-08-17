@@ -2,3 +2,8 @@ move maps to separate file.
 style navbar.
 add rest countries api.
 dispaly country's info.
+
+
+create p tags for information in objects. 
+have p tags grouped in divs. (divs = 3 p ).
+give each p tag an id and rescive them in js. 
