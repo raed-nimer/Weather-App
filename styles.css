@@ -16,8 +16,8 @@ body {
     color: rgb(0, 0, 0);
 }  
 
-.nav-links {
-    list-style: none;
+.navbar {
+    background: #0c81e9;
     display: flex;
     align-items: center;
     gap: 1rem;
