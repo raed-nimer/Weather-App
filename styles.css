@@ -20,7 +20,12 @@ body {
     background: #0c81e9;
     display: flex;
     align-items: center;
-    gap: 1rem;
+
+.navbar-header {
+    color: white;
+    font-weight: 600;
+    margin: 0 10px;
+}
 }   
 
 .montserrat {
@@ -197,5 +202,16 @@ gap: 10px;
 }
 
 .forecast-container-wrapper{
+
+}
+
+@media  screen and (max-width:520px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    
+    .location {
+        text-align: center;
+    }
 
 }
