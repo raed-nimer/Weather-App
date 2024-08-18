@@ -3,11 +3,10 @@ let countryFlagELement = document.getElementById("country-flag-container")
 let countryNameELement = document.getElementById("country-name")
 let searchInputElement = document.getElementById("country-input")
 let capitalElement = document.getElementById("capital")
-let currencyElement = document.getElementById("currency")
 let languageElement = document.getElementById("language")
 let populationELement = document.getElementById("population")
 let timezoneElement = document.getElementById("timezone")
-let independentElement = document.getElementById("independent")
+ let continentElement = document.getElementById("continent")
 let regionElement = document.getElementById("region")
 let countriesInformation = []
 var map = L.map('map').setView([0, 0], 1);
@@ -56,6 +55,7 @@ let populateData = (country) => {
     regionElement.innerHTML = country.region
     timezoneElement.innerHTML = country.timezones.join(", ")
     languageElement.innerHTML = Object.values(country.languages)
+    continentElement.innerHTML = country.continents.join(", ")
     console.log(country.flag);
 
     let latitude = country.latlng[0]

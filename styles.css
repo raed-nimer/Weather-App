@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: rgb(235, 232, 232);
     font-family: "Montserrat", sans-serif;
@@ -20,6 +21,7 @@ body {
     background: #0c81e9;
     display: flex;
     align-items: center;
+}   
 
 .navbar-header {
     color: white;
@@ -47,6 +49,7 @@ body {
     font-size: 18px;
 }
 
+
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -58,7 +61,7 @@ body {
     /* max-width: 600px; */
     margin: 0 auto;
     margin-top: 3rem;
-    background-image: linear-gradient(to right,#00a0d5 0%,  #4facfe 100%);
+    background-image: linear-gradient(to right,#0075d5 0%,  #4facfe 100%);
     padding: 1rem;
     border-radius: .5rem;
     text-align: center;
@@ -70,11 +73,12 @@ body {
 }
 
 .search-input {
-    padding: 7px 10px;
+    padding: 8px 14px;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 8px;
     border-radius: 6px;
+    outline: none;
 }
 
 .search-btn {
@@ -188,7 +192,7 @@ gap: 10px;
 
 .forecast-container {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
 }
 
 .forecast-card {
@@ -197,6 +201,7 @@ gap: 10px;
     padding: 10px;
     border-radius: 6px;
     margin: 4px;
+    flex: 0 0 auto;
 }
 
 .main-info-container {

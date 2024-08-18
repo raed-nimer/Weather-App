@@ -51,15 +51,19 @@ let fetchWeatherInfo = async (city) => {
     
     let output = ""
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 20; i++) {
         console.log(listofForcastweathers[i]);
         let weather = listofForcastweathers[i].main.temp - 273.15
         let time = listofForcastweathers[i].dt_txt
+        time = time.slice(5,time.length-3)
+        let dateAndTime = time.split(" ")
+        let date = dateAndTime[0]
+        let hourlyTime = dateAndTime[1]
 
         let iconcode = listofForcastweathers[i].weather[0].icon
         let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
 
-        output += "<div class='forecast-card'>  <p class='text-white'>" + time + "</p> <img src='"+ iconurl +"'/> <p class='text-white'>" + weather.toFixed(0) + "°C </p></div> "
+        output += "<div class='forecast-card'>  <p class='text-white'>" + date + "</p>  <p class='text-white'>" + hourlyTime + "</p> <img src='"+ iconurl +"'/> <p class='text-white'>" + weather.toFixed(0) + "°C </p></div> "
 
     }
 
