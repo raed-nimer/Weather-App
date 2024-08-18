@@ -194,8 +194,9 @@ gap: 10px;
 }
 
 .country-details {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 16px 0;
 }
 
 .forecast-header {
