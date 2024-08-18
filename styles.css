@@ -155,9 +155,10 @@ gap: 10px;
 }
 
 .pressure-container, .temp-container {
-    display: flex;
-    justify-content: space-around;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
+    margin: 12px 0;
 }
 
 .map {
