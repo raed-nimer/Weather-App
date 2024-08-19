@@ -26,7 +26,9 @@ let fetchCountryInfo = async () => {
         console.log(formattedData);
         countriesInformation = [...formattedData]
         let countryNames = formattedData.map((country) => country.name.common)
-        console.log(countryNames);
+        console.log("countries: ", countryNames);
+        countryNames.sort()
+        console.log("countries after: ", countryNames);
         let output = ""
         for (let i = 0; i < countryNames.length; i++) {
             output += "<option>"+countryNames[i]+"</option>"
@@ -34,8 +36,9 @@ let fetchCountryInfo = async () => {
         }
         
         searchInputElement.innerHTML = output 
+        let country = countriesInformation.find((c) => c.name.common === countryNames[0])
         // setting first country as default
-        populateData(countriesInformation[0])
+        populateData(country)
        
     } 
  catch(error){
@@ -54,7 +57,7 @@ let populateData = (country) => {
     populationELement.innerHTML = country.population 
     regionElement.innerHTML = country.region
     timezoneElement.innerHTML = country.timezones.join(", ")
-    languageElement.innerHTML = Object.values(country.languages)
+    languageElement.innerHTML = Object.values(country.languages).join(", ")
     continentElement.innerHTML = country.continents.join(", ")
     console.log(country.flag);
 
