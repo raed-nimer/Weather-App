@@ -252,5 +252,9 @@ gap: 10px;
     .list-item {
         padding: 0.5rem;
     }
+
+    .search-input {
+        max-width: 80%;
+    }
     
 }
