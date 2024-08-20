@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
         integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
@@ -19,7 +19,9 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
+         <!-- Logo/Heading -->
         <h2 class="navbar-header"> Know Your World</h2>
         <ul class="list-items">
             <li class="list-item"><a href="index.html">Home</a></li>
@@ -28,6 +30,7 @@
     </nav>
     <div class="card">
         <div class="search">
+            <!-- country dropdown -->
             <select class="search-input mb-4" placeholder="Enter country" id="country-input">
                 <option>Select Country</option>
             </select>
@@ -44,31 +47,37 @@
                 <div class="country-details">
                     <div class="capital-container">
                         <p class="text-lg text-white">Capital:</p>
+                        <!-- Capital information -->
                         <p class="text-white" id="capital"></p>
                     </div>
 
                     <div class="language-container">
                         <p class="text-lg text-white">Language:</p>
+                        <!-- Country languages -->
                         <p class="text-white" id="language"></p>
                     </div>
                 </div>
                 <div class="country-details">
                     <div class="population-container">
                         <p class="text-lg text-white">Population:</p>
+                        <!-- Population details -->
                         <p class="text-white" id="population"></p>
                     </div>
                     <div class="timezone-container">
                         <p class="text-lg text-white">Timezones:</p>
+                        <!-- Country timezones -->
                         <p class="text-white" id="timezone"></p>
                     </div>
                 </div>
                 <div class="country-details">
                     <div class="region-container">
                         <p class="text-lg text-white">Region:</p>
+                        <!-- regions -->
                         <p class="text-white" id="region"></p>
                     </div>
                     <div class="continent-container">
                         <p class="text-lg text-white">Continent(s)</p>
+                        <!-- continents -->
                         <p class="text-white" id="continent"></p>
                     </div>
                 </div>

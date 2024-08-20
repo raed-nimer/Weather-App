@@ -83,8 +83,8 @@ body {
 .search-btn {
     padding: 7px 10px;
     font-size: 16px;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 183, 255);
+    border-radius: 8px;
+    border: 1px solid #7ca1ff;
     background:#7ca1ff;
 
 }
@@ -224,6 +224,10 @@ gap: 10px;
 
 .forecast-header {
     font-weight: 400;
+}
+
+.map {
+    min-height: 61vh;
 }
 
 @media  screen and (max-width:520px) {
