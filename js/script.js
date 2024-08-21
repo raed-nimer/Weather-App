@@ -14,6 +14,9 @@ let weatherdescriptionElement = document.getElementById("weather-description");
 let forecastElement = document.getElementById("forecast-container");
 let imageContainerElement = document.getElementById("image-container");
 
+let mapMarker = document.querySelector(".leaflet-marker-icon");
+mapMarker.alt = "marker";
+
 // Adding leaflet.js map
 var map = L.map("map").setView([0, 0], 1);
 let marker = null;
