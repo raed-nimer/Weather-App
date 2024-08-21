@@ -22,6 +22,8 @@ L.tileLayer(
   }
 ).addTo(map);
 
+let markerElement = null;
+
 // Method to fetch all countries information
 let fetchCountryInfo = async () => {
   //API Call
@@ -65,7 +67,8 @@ let populateData = (country) => {
   //   Displaying country name
   countryNameELement.innerHTML = country.name.common;
   //  Displaying country flag
-  countryFlagELement.innerHTML = "<img src='" + country.flags.png + "' alt='country flag'/>";
+  countryFlagELement.innerHTML =
+    "<img src='" + country.flags.png + "' alt='country flag'/>";
   capitalElement.innerHTML = country.capital[0];
   populationELement.innerHTML = country.population;
   regionElement.innerHTML = country.region;
@@ -85,6 +88,12 @@ let populateData = (country) => {
   //   map.setView([latitude, longitude], 10)
   map.flyTo([latitude, longitude], 5);
   marker = L.marker([latitude, longitude]).addTo(map);
+
+  if (!markerElement)
+    markerElement = document.querySelector(
+      ".leaflet-pane.leaflet-marker-pane > img"
+    );
+  markerElement.alt = "Map icon";
 };
 
 fetchCountryInfo();
