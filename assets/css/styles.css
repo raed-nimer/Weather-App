@@ -53,13 +53,6 @@ body {
   font-size: 18px;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* Styling the weather card */
 .card {
   margin: 0 auto;
@@ -89,7 +82,7 @@ body {
   font-size: 16px;
   border-radius: 8px;
   border: 1px solid #002a95;
-  background: #002a95
+  background: #002a95;
 }
 
 /* Styling temperature container */
@@ -192,8 +185,6 @@ body {
   margin: 12px 0;
 }
 
-
-
 /* Adjusting the map */
 .map {
   width: 100%;
@@ -208,7 +199,6 @@ body {
 .map {
   min-height: 61vh;
 }
-
 
 /* Styling forecast section */
 .forecast-container {
@@ -229,7 +219,6 @@ body {
   flex: 0 0 auto;
 }
 
-
 /* Styling main weather information section */
 .extra-info-container {
   background-color: rgba(255, 255, 255, 0.2);
@@ -240,7 +229,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 /* Styling country information card */
 .country-details {
