@@ -12,6 +12,7 @@ let searchElement = document.getElementById("search-btn");
 let imageElement = document.getElementById("image");
 let weatherdescriptionElement = document.getElementById("weather-description");
 let forecastElement = document.getElementById("forecast-container");
+let imageContainerElement = document.getElementById("image-container");
 
 // Adding leaflet.js map
 var map = L.map("map").setView([0, 0], 1);
@@ -91,7 +92,7 @@ let fetchWeatherInfo = async (city) => {
           hourlyTime +
           "</p> <img src='" +
           iconurl +
-          "'/> <p class='text-white'>" +
+          "' alt='forecast image'/> <p class='text-white'>" +
           weather.toFixed(0) +
           "°C </p></div> ";
       }
@@ -107,7 +108,8 @@ let fetchWeatherInfo = async (city) => {
       let iconcode = formattedData.weather[0].icon;
       let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
       // Displaying weather icon
-      imageElement.src = iconurl;
+      imageContainerElement.innerHTML =
+        "<img class='weather-img' src='" + iconurl + "' alt='weather icon'/>";
 
       let weatherdescription = formattedData.weather[0].description;
       // displaying weather description
@@ -159,7 +161,6 @@ let fetchWeatherInfo = async (city) => {
     // if anything goes wrong in the 'try' block,
     // it will jump to catch()
     console.log(error.message);
-    
   }
 };
 

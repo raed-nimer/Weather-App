@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
         integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
@@ -30,7 +30,9 @@
     </nav>
     <!-- Weather Card -->
     <div class="card">
-        <div class="search"><input type="text" class="search-input" placeholder="Enter city" id="city-input">
+        <div class="search">
+            <label for="city-input"><input type="text" class="search-input" placeholder="Enter city"
+                    id="city-input"></label>
             <!-- Search button -->
             <button class="search-btn text-white" id="search-btn"> Search <i
                     class="fa-solid fa-magnifying-glass"></i></button>
@@ -41,7 +43,7 @@
         <div class="wrapper mt-4">
             <div class="main-info-container">
                 <!-- Weather icon/image -->
-                <img class="weather-img" src="" id="image" alt="weather image">
+               <div id="image-container"></div>
                 <p class="weather-description text-white" id="weather-description"></p>
                 <h2 class="temperature text-white" id="temp"></h2>
 

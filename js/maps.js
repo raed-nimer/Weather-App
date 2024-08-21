@@ -65,7 +65,7 @@ let populateData = (country) => {
   //   Displaying country name
   countryNameELement.innerHTML = country.name.common;
   //  Displaying country flag
-  countryFlagELement.innerHTML = "<img src='" + country.flags.png + "'/>";
+  countryFlagELement.innerHTML = "<img src='" + country.flags.png + "' alt='country flag'/>";
   capitalElement.innerHTML = country.capital[0];
   populationELement.innerHTML = country.population;
   regionElement.innerHTML = country.region;
