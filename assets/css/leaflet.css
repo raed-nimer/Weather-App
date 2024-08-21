@@ -114,7 +114,7 @@
   height: 1px;
 }
 .lvml {
-  behavior: url(#default#VML);
+  /* behavior: url(#default#VML);*/
   display: inline-block;
   position: absolute;
 }
