@@ -3,7 +3,7 @@
 <p>"Know Your World" stands out as a multifaceted weather application, offering users a comprehensive experience beyond just weather updates. In addition to providing detailed forecasts for any city globally, the app's unique country section elevates the user experience by integrating valuable insights about countries worldwide. By seamlessly blending weather data with geographical knowledge, users can explore countries on an interactive map, uncovering key details such as capitals, languages spoken, population statistics, timezones, regions, and continents where the countries are situated. This innovative fusion of weather and geographical information equips users with a holistic understanding of the world around them, empowering them to make informed decisions and deepen their global awareness. Embrace the full potential of "Know Your World" to stay informed, explore, and broaden your horizons effortlessly.</p>
 
 ![Responsiveness View](assets/images/home-responsive-view.png)
-[Live webpage](https://raed-nimer.github.io/CI_PP1_CG/)
+[Live webpage](https://raed-nimer.github.io/Weather-App/index.html)
 
 # Tools and technologies used
 
@@ -31,6 +31,12 @@
 - Header of the page 
 - contains links to home and maps page
 ![Navbar](assets/images/navbar.png)
+
+### Home page
+
+##### Weather section
+
+### Maps page
 
 
 
