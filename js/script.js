@@ -25,6 +25,8 @@ L.tileLayer(
   }
 ).addTo(map);
 
+let markerElement = null;
+
 //   Method to fetch weather information based on location
 let fetchWeatherInfo = async (city) => {
   //API Call
@@ -158,6 +160,12 @@ let fetchWeatherInfo = async (city) => {
       // Jumping to current location
       map.flyTo([latitude, longitude], 5);
       marker = L.marker([latitude, longitude]).addTo(map);
+
+      if (!markerElement)
+        markerElement = document.querySelector(
+          ".leaflet-pane.leaflet-marker-pane > img"
+        );
+      markerElement.alt = "Map icon";
     }
   } catch (error) {
     // if anything goes wrong in the 'try' block,
