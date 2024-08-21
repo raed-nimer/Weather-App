@@ -92,7 +92,9 @@ let fetchWeatherInfo = async (city) => {
           hourlyTime +
           "</p> <img src='" +
           iconurl +
-          "' alt='forecast image'/> <p class='text-white'>" +
+          "' alt='forecast image-" +
+          i +
+          "'/> <p class='text-white'>" +
           weather.toFixed(0) +
           "°C </p></div> ";
       }
