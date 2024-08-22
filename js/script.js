@@ -157,9 +157,17 @@ let fetchWeatherInfo = async (city) => {
       if (marker != null) {
         map.removeLayer(marker);
       }
+      let markerIcon = new L.Icon({
+        iconUrl: 'assets/images/marker-icon-blue.png',
+        shadowUrl: 'assets/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      });
       // Jumping to current location
       map.flyTo([latitude, longitude], 5);
-      marker = L.marker([latitude, longitude]).addTo(map);
+      marker = L.marker([latitude, longitude], {icon: markerIcon}).addTo(map);
 
       if (!markerElement)
         markerElement = document.querySelector(

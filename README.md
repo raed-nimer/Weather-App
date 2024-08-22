@@ -34,34 +34,82 @@
   ![Navbar](assets/images/navbar.png)
 
 ### Home page
-<p>Home page include a search bar, live weather information and three hour forecast for any country or city in the world</p>
+
+<p>Home page includes a search bar, live weather information, three hour forecast for any country or city in the world and a map showing you the exact location you search for </p>
+
+![Full home view](assets/images/complete-home-view.png)
+
+##### Weather Section
+
+The weather section contains more detailed description like:
+
+- What the weather feels like
+- Max temperature
+- Min temperature
+- Pressure
+- Sea level
+- Humidity.
 
 ![Home](assets/images/home-view.png)
 
-##### Weather Section
-<p>There is a main card that contains what the weather feels like, highest it can be, the lowest, pressure, sea level, humidity. </p>
-
-![Main card](assets/images/main-weather-card.png)
-
-
-
 ##### Maps Section
+
+<p>The map on the home page marks the location you search for creating a more engaging experience</p>
+
+![Home map](assets/images/home-map-view.png)
 
 ### Maps page
 
+The map page gives a detailed overview of the selected country, and displays the country's location on the map.
+
+![Map page](assets/images/map-page-view.png)
+
 ##### Country Details Section
+
+the country details section displays the following information of the selected country:
+
+- Flag
+- Capital
+- language
+- Population
+- Timezones
+- Region
+- Continent
 
 ##### Maps Section
 
+<p>The maps section displays the selected country's location on the map</p>
+
+![country map view](assets/images/maps-page-map-view.png)
+
 ## Testing
+
+The website was tested on devices and with various tools
 
 ### Validator Testing
 
 ##### HTML
 
+HTML validation was preformed using the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fraed-nimer.github.io%2FWeather-App%2Findex.html). There were errors regarding alt attribute on images and missing labels. All errors were immediately fixed.
+
+![Validation image](assets/images/html-validation.png)
+
 ##### CSS
 
+CSS validation was preformed using the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraed-nimer.github.io%2FWeather-App%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings). There was an error regarding the contrast of button and text. All errors were immediately fixed.
+
+<!-- add image -->
+
 ##### Responsiveness
+
+This website was tested on the following devices:
+
+- Macbook
+- desktop pc
+- IPad 6th and 10th generation
+- iPhone SE, iPhone 12 and iPhone 13.
+
+And the responsiveness looked all good.
 
 ##### Lighthouse
 
@@ -70,6 +118,17 @@
 ### unfixed Bugs
 
 ### Deployment
+
+##### Deploy with GitHub Pages.
+
+The steps to deploy are as follows:
+
+- Navigate to the [repository](https://github.com/raed-nimer/Weather-App)
+- Click on Settings on the top.
+- Click on Pages on the menu on the left which will open GitHub Pages window.
+- From the drop down menu under source select deploy from branch.
+- From the drop down menu under branch select main, this tells GitHub which branch to use for the deployment. Click Save.
+- The page should refresh and the deployment link should appear.
 
 // You can copy from previous project
 
