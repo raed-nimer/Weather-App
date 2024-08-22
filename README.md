@@ -92,13 +92,13 @@ The website was tested on devices and with various tools
 
 HTML validation was preformed using the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fraed-nimer.github.io%2FWeather-App%2Findex.html). There were errors regarding alt attribute on images and missing labels. All errors were immediately fixed.
 
-![Validation image](assets/images/html-validation.png)
+![HTML validation image](assets/images/html-validation.png)
 
 ##### CSS
 
 CSS validation was preformed using the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraed-nimer.github.io%2FWeather-App%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings). There was an error regarding the contrast of button and text. All errors were immediately fixed.
 
-<!-- add image -->
+![CSS validation image](assets/images/css-validator.png)
 
 ##### Responsiveness
 
@@ -112,6 +112,9 @@ This website was tested on the following devices:
 And the responsiveness looked all good.
 
 ##### Lighthouse
+
+![Lighthouse](assets/images/lighthouse-testing.png)
+
 
 ### Interesting Bugs or Problems
 
