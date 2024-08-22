@@ -60,12 +60,22 @@ body {
   text-align: center;
 }
 
-/* Adding styles to search bar */
+/* Adding styles to search bar and country select */
 .search {
   margin-top: 8px;
 }
 
 .search-input {
+  padding: 8px 14px;
+  border: none;
+  font-size: 20px;
+  margin-left: 8px;
+  border-radius: 6px;
+  outline: none;
+  width: 300px;
+}
+
+.select-dropdown {
   padding: 8px 14px;
   border: none;
   font-size: 20px;
@@ -265,6 +275,15 @@ body {
   }
 
   .search-input {
+    max-width: 62%;
+    padding: 5px 14px;
+  }
+
+  .city-input {
+    display: none;
+  }
+
+  .select-dropdown {
     max-width: 80%;
   }
 }
