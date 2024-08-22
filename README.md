@@ -25,18 +25,52 @@
 - [W3C HTML Validator](https://validator.w3.org/) was used to check for errors in the HTML code
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code
 
-## features 
+## features
 
 ##### Header
-- Header of the page 
+
+- Header of the page
 - contains links to home and maps page
-![Navbar](assets/images/navbar.png)
+  ![Navbar](assets/images/navbar.png)
 
 ### Home page
+<p>Home page include a search bar, live weather information and three hour forecast for any country or city in the world</p>
 
-##### Weather section
+![Home](assets/images/home-view.png)
+
+##### Weather Section
+<p>There is a main card that contains what the weather feels like, highest it can be, the lowest, pressure, sea level, humidity. </p>
+
+![Main card](assets/images/main-weather-card.png)
+
+
+
+##### Maps Section
 
 ### Maps page
 
+##### Country Details Section
 
+##### Maps Section
 
+## Testing
+
+### Validator Testing
+
+##### HTML
+
+##### CSS
+
+##### Responsiveness
+
+##### Lighthouse
+
+### Interesting Bugs or Problems
+
+### unfixed Bugs
+
+### Deployment
+
+// You can copy from previous project
+
+## Credits
