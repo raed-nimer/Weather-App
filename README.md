@@ -115,10 +115,11 @@ And the responsiveness looked all good.
 
 ![Lighthouse](assets/images/lighthouse-testing.png)
 
-
 ### Interesting Bugs or Problems
 
 ### unfixed Bugs
+
+<p>After conducting thorough testing using different online tools and devices, all identified warnings and errors have been rectified</p>
 
 ### Deployment
 
@@ -132,7 +133,5 @@ The steps to deploy are as follows:
 - From the drop down menu under source select deploy from branch.
 - From the drop down menu under branch select main, this tells GitHub which branch to use for the deployment. Click Save.
 - The page should refresh and the deployment link should appear.
-
-// You can copy from previous project
 
 ## Credits
