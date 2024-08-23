@@ -9,7 +9,6 @@ let pressureElement = document.getElementById("pressure");
 let sealevelElement = document.getElementById("sea-level");
 let inputElement = document.getElementById("city-input");
 let searchElement = document.getElementById("search-btn");
-let imageElement = document.getElementById("image");
 let weatherdescriptionElement = document.getElementById("weather-description");
 let forecastElement = document.getElementById("forecast-container");
 let imageContainerElement = document.getElementById("image-container");
@@ -158,16 +157,16 @@ let fetchWeatherInfo = async (city) => {
         map.removeLayer(marker);
       }
       let markerIcon = new L.Icon({
-        iconUrl: 'assets/images/marker-icon-blue.png',
-        shadowUrl: 'assets/images/marker-shadow.png',
+        iconUrl: "assets/images/marker-icon-blue.png",
+        shadowUrl: "assets/images/marker-shadow.png",
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
-        shadowSize: [41, 41]
+        shadowSize: [41, 41],
       });
       // Jumping to current location
       map.flyTo([latitude, longitude], 5);
-      marker = L.marker([latitude, longitude], {icon: markerIcon}).addTo(map);
+      marker = L.marker([latitude, longitude], { icon: markerIcon }).addTo(map);
 
       if (!markerElement)
         markerElement = document.querySelector(
