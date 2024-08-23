@@ -35,7 +35,7 @@
 
 ### Home page
 
-<p>Home page includes a search bar, live weather information, three hour forecast for any country or city in the world and a map showing you the exact location you search for </p>
+<p>Home page includes a search bar, live weather information, three hour forecast for any country or city in the world and a map showing you the exact location you search for. </p>
 
 ![Full home view](assets/images/complete-home-view.png)
 
@@ -48,13 +48,13 @@ The weather section contains more detailed description like:
 - Min temperature
 - Pressure
 - Sea level
-- Humidity.
+- Humidity
 
 ![Home](assets/images/home-view.png)
 
 ##### Maps Section
 
-<p>The map on the home page marks the location you search for creating a more engaging experience</p>
+<p>The map on the home page marks the location you search for creating a more engaging experience.</p>
 
 ![Home map](assets/images/home-map-view.png)
 
@@ -78,13 +78,13 @@ the country details section displays the following information of the selected c
 
 ##### Maps Section
 
-<p>The maps section displays the selected country's location on the map</p>
+<p>The maps section displays the selected country's location on the map.</p>
 
 ![country map view](assets/images/maps-page-map-view.png)
 
 ## Testing
 
-The website was tested on devices and with various tools
+The website was tested on devices and with various tools.
 
 ### Validator Testing
 
@@ -113,9 +113,14 @@ And the responsiveness looked all good.
 
 ##### Lighthouse
 
-![Lighthouse](assets/images/lighthouse-testing.png)
+![Lighthouse](assets/images/lighthouse-test.png)
 
 ### Interesting Bugs or Problems
+
+<p>
+This project was an interesting learning opportunity. 
+The first problem I encountered with finding out that the first version of it was not enough and that I have to restructure my plan before the time of the deadline. Keeping that in mind, I brought in another extension of adding an extra API to the project. This brought a newer feel to the application, making it look more precise and complete. 
+</p>
 
 ### unfixed Bugs
 
@@ -135,3 +140,6 @@ The steps to deploy are as follows:
 - The page should refresh and the deployment link should appear.
 
 ## Credits
+
+- I want to thank the Slack community. 
+- Internet for inspirations.
