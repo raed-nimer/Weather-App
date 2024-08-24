@@ -156,5 +156,11 @@ The steps to deploy are as follows:
 
 ## Credits
 
-- I want to thank the Slack community.
-- Internet for inspirations.
+### Acknowledgements
+
+- The Slack Community for their support.
+
+### Youtube channels that was in great help for my projcet are:
+
+- [codewithsadee](https://www.youtube.com/@codewithsadee) 
+
