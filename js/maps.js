@@ -1,5 +1,4 @@
 // Html elements
-let searchBtnElement = document.getElementById("search-country-btn");
 let countryFlagELement = document.getElementById("country-flag-container");
 let countryNameELement = document.getElementById("country-name");
 let searchInputElement = document.getElementById("country-input");
@@ -97,13 +96,6 @@ let populateData = (country) => {
 };
 
 fetchCountryInfo();
-//Change to handleClick()
-const handleButtonClick = () => {
-  let value = searchInputElement.value; //this will give the value
-  console.log(value);
-  if (value !== "") {
-  }
-};
 
 // Method to handle dropdown selection change
 const handleSelectChange = () => {
