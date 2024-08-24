@@ -148,10 +148,6 @@ let fetchWeatherInfo = async (city) => {
       let minTempInC = mainInformation.temp_min - 273.15;
       mintempElement.innerHTML = minTempInC.toFixed(0) + "°C";
 
-      let timezone = formattedData.timezone;
-      let wind = formattedData.wind;
-      let weatherInfo = formattedData.weather;
-
       // Removing old marker
       if (marker != null) {
         map.removeLayer(marker);
