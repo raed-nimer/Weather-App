@@ -100,6 +100,21 @@ CSS validation was preformed using the official [(Jigsaw) validator](https://jig
 
 ![CSS validation image](assets/images/css-validator.png)
 
+##### JavaScript
+
+Js validation was preformed using the official
+[JSHint](https://jshint.com/). The whole project's javascript was divided into two files:
+
+- script.js
+
+JSHint reported that there were three unused variables. All unused variables were removed immediately.
+![Script.js image](assets/images/script-js-validation.png)
+
+- maps.js
+
+JSHint reported that there were two unused variables. All unused variables were removed immediately.
+![Maps.js image](assets/images/maps-js-validation.png)
+
 ##### Responsiveness
 
 This website was tested on the following devices:
@@ -141,5 +156,5 @@ The steps to deploy are as follows:
 
 ## Credits
 
-- I want to thank the Slack community. 
+- I want to thank the Slack community.
 - Internet for inspirations.
